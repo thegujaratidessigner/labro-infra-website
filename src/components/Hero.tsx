@@ -67,7 +67,7 @@ export default function Hero() {
 
             {/* Right Content - Map Placeholder */}
             <div className="relative hidden lg:block">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white-20">
                 <div className="aspect-square bg-gradient-to-br from-blue-950 to-slate-900 rounded-xl flex items-center justify-center">
                   <div className="text-center space-y-4">
                     <Map className="w-32 h-32 text-blue-400/50 mx-auto" />
