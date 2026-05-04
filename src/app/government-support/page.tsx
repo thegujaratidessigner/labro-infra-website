@@ -52,7 +52,7 @@ export default function GovernmentSupportPage() {
               <h2 className="text-2xl font-bold text-blue-900 mb-8">Strong Policy & Planning Support</h2>
               <div className="mb-8">
                 <img
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
                   alt="Government Planning"
                   className="w-full h-64 object-cover rounded-2xl shadow-lg"
                 />

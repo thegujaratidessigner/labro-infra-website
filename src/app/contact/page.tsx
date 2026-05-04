@@ -159,7 +159,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Location</h2>
                   <div className="aspect-video bg-gradient-to-br from-slate-100 to-blue-50 rounded-xl flex items-center justify-center relative overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=1200&q=80"
+                      src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&q=80"
                       alt="Navi Mumbai Location"
                       className="absolute inset-0 w-full h-full object-cover opacity-50"
                     />

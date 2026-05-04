@@ -46,9 +46,9 @@ export default function WhatIsMumbai30() {
           <div className="relative hidden lg:block">
             <div className="bg-gradient-to-br from-slate-100 to-blue-50 rounded-2xl p-8 aspect-square flex items-center justify-center relative overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
-                alt="Mumbai 3.0 Satellite View"
-                className="absolute inset-0 w-full h-full object-cover opacity-40"
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+                alt="Mumbai 3.0 Development"
+                className="absolute inset-0 w-full h-full object-cover opacity-30"
               />
               <div className="relative z-10 text-center space-y-4">
                 <MapPin className="w-24 h-24 text-blue-400 mx-auto" />

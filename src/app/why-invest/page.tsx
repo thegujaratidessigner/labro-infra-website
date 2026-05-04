@@ -63,7 +63,7 @@ export default function WhyInvestPage() {
               </h2>
               <div className="mb-8">
                 <img
-                  src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&q=80"
+                  src="https://images.unsplash.com/photo-1555664424-778a69022365?w=1200&q=80"
                   alt="Mumbai Connectivity"
                   className="w-full h-64 object-cover rounded-2xl shadow-lg"
                 />

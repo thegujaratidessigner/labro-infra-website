@@ -20,7 +20,7 @@ export default function AboutPage() {
             <div className="text-center mb-16">
               <div className="mb-8">
                 <img
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+                  src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&q=80"
                   alt="Labro Infra Office"
                   className="w-full h-64 object-cover rounded-2xl shadow-lg"
                 />
