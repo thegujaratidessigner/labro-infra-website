@@ -61,6 +61,13 @@ export default function WhyInvestPage() {
                 <Road className="w-8 h-8" />
                 Connectivity
               </h2>
+              <div className="mb-8">
+                <img
+                  src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80"
+                  alt="Highway Infrastructure"
+                  className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                />
+              </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
                 {connectivityItems.map((item, index) => (
                   <div key={index} className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6 hover:shadow-lg transition-shadow">

@@ -157,8 +157,13 @@ export default function ContactPage() {
                 {/* Map Placeholder */}
                 <div className="bg-white rounded-2xl p-8 shadow-xl">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Location</h2>
-                  <div className="aspect-video bg-gradient-to-br from-slate-100 to-blue-50 rounded-xl flex items-center justify-center">
-                    <div className="text-center">
+                  <div className="aspect-video bg-gradient-to-br from-slate-100 to-blue-50 rounded-xl flex items-center justify-center relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&q=80"
+                      alt="Office Location"
+                      className="absolute inset-0 w-full h-full object-cover opacity-50"
+                    />
+                    <div className="relative z-10 text-center">
                       <MapPin className="w-16 h-16 text-blue-400 mx-auto mb-4" />
                       <p className="text-gray-600 font-medium">Google Map</p>
                       <p className="text-sm text-gray-500">CBD Belapur, Navi Mumbai</p>

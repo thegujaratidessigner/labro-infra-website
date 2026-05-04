@@ -18,6 +18,13 @@ export default function AboutPage() {
 
             {/* Quote */}
             <div className="text-center mb-16">
+              <div className="mb-8">
+                <img
+                  src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&q=80"
+                  alt="Infrastructure Development"
+                  className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                />
+              </div>
               <blockquote className="bg-gradient-to-r from-blue-900 to-slate-900 text-white rounded-2xl p-8 max-w-4xl mx-auto">
                 <p className="text-2xl sm:text-3xl font-medium italic">
                   "We don't just sell land, we help you invest in the future."

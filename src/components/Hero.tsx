@@ -68,8 +68,14 @@ export default function Hero() {
             {/* Right Content - Map Placeholder */}
             <div className="relative hidden lg:block">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white-20">
-                <div className="aspect-square bg-gradient-to-br from-blue-950 to-slate-900 rounded-xl flex items-center justify-center">
-                  <div className="text-center space-y-4">
+                <div className="aspect-square bg-gradient-to-br from-blue-950 to-slate-900 rounded-xl flex items-center justify-center relative overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=800&q=80"
+                    alt="Infrastructure Development"
+                    className="absolute inset-0 w-full h-full object-cover opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent" />
+                  <div className="relative z-10 text-center space-y-4">
                     <Map className="w-32 h-32 text-blue-400/50 mx-auto" />
                     <p className="text-white text-sm font-medium">KSC Region Map</p>
                     <p className="text-blue-200 text-xs">Karnala–Sai–Chirner New Town</p>
