@@ -69,9 +69,14 @@ export default function Hero() {
             <div className="relative hidden lg:block">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <div className="aspect-square bg-gradient-to-br from-blue-950 to-slate-900 rounded-xl flex items-center justify-center relative overflow-hidden">
-                  <Map className="w-32 h-32 text-blue-400/50" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+                    alt="Mumbai Infrastructure"
+                    className="absolute inset-0 w-full h-full object-cover opacity-60"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent" />
+                  <div className="relative z-10 text-center">
+                    <Map className="w-32 h-32 text-blue-400/50 mx-auto mb-4" />
                     <p className="text-white text-sm font-medium">KSC Region Map</p>
                     <p className="text-blue-200 text-xs">Karnala–Sai–Chirner New Town</p>
                   </div>

@@ -33,6 +33,13 @@ export default function ProjectsPage() {
 
             {/* About */}
             <div className="bg-white rounded-2xl p-8 shadow-xl mb-12">
+              <div className="mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
+                  alt="Land Investment"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg"
+                />
+              </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">About Our Projects</h2>
               <p className="text-gray-700 leading-relaxed">
                 Labro Infra offers carefully selected land investment opportunities in the KSC region, identified based on infrastructure growth, connectivity, and future development potential.

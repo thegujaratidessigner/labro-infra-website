@@ -50,6 +50,13 @@ export default function GovernmentSupportPage() {
             {/* Strong Policy & Planning Support */}
             <div className="mb-16">
               <h2 className="text-2xl font-bold text-blue-900 mb-8">Strong Policy & Planning Support</h2>
+              <div className="mb-8">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
+                  alt="Government Planning"
+                  className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                />
+              </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
                 {policyItems.map((item, index) => (
                   <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
