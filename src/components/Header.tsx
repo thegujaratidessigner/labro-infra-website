@@ -17,20 +17,17 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Why Invest', href: '#why-invest' },
-    { name: 'Government Support', href: '#government-support' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Why Invest', href: '/why-invest' },
+    { name: 'Government Support', href: '/government-support' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = href;
   };
 
   return (

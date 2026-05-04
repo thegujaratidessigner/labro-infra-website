@@ -28,37 +28,37 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                <a href="/" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <ArrowRight className="w-4 h-4" />
                   Home
                 </a>
               </li>
               <li>
-                <a href="#why-invest" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                <a href="/why-invest" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <ArrowRight className="w-4 h-4" />
                   Why Invest in KSC
                 </a>
               </li>
               <li>
-                <a href="#government-support" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                <a href="/government-support" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <ArrowRight className="w-4 h-4" />
                   Government Support
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                <a href="/projects" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <ArrowRight className="w-4 h-4" />
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                <a href="/about" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <ArrowRight className="w-4 h-4" />
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                <a href="/contact" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <ArrowRight className="w-4 h-4" />
                   Contact
                 </a>
