@@ -83,7 +83,7 @@ export default function ProjectsPage() {
                 <img
                   src="/images/ksc/image_20.jpeg"
                   alt="Location Advantage"
-                  className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                  className="w-full h-auto object-contain rounded-2xl shadow-lg max-h-96"
                 />
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

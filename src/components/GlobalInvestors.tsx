@@ -29,16 +29,16 @@ export default function GlobalInvestors() {
           </div>
 
           <div className="relative">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 aspect-video flex items-center justify-center relative overflow-hidden">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex items-center justify-center relative overflow-hidden" style={{ minHeight: '350px' }}>
               <img
                 src="/images/ksc/image_6.jpeg"
                 alt="Global Investors"
-                className="absolute inset-0 w-full h-full object-cover opacity-50"
+                className="w-full h-full object-contain p-4"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent" />
-              <div className="relative z-10 text-center">
-                <Globe className="w-16 h-16 mx-auto mb-4 text-amber-400" />
-                <p className="text-xl font-semibold">Global Investment Hub</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent pointer-events-none" />
+              <div className="relative z-10 text-center pointer-events-none">
+                <Globe className="w-14 h-14 mx-auto mb-3 text-amber-400" />
+                <p className="text-lg font-semibold">Global Investment Hub</p>
               </div>
             </div>
           </div>

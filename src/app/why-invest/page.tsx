@@ -167,7 +167,7 @@ export default function WhyInvestPage() {
                 <img
                   src="/images/ksc/image_19.jpeg"
                   alt="Connectivity Infrastructure"
-                  className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                  className="w-full h-auto object-contain rounded-2xl shadow-lg max-h-96"
                 />
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
@@ -190,11 +190,11 @@ export default function WhyInvestPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 {infrastructureItems.map((item, index) => (
                   <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div className="h-48 relative overflow-hidden">
+                    <div className="h-56 relative overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50">
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain p-4"
                       />
                     </div>
                     <div className="p-6">
@@ -221,11 +221,11 @@ export default function WhyInvestPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 {futureVisionItems.map((item, index) => (
                   <div key={index} className="bg-gradient-to-br from-amber-50 to-blue-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div className="h-48 relative overflow-hidden">
+                    <div className="h-56 relative overflow-hidden bg-white">
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain p-4"
                       />
                     </div>
                     <div className="p-6">

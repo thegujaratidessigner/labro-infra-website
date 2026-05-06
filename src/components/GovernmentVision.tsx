@@ -36,16 +36,16 @@ export default function GovernmentVision() {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-900 to-slate-900 rounded-2xl p-8 aspect-video flex items-center justify-center relative overflow-hidden">
+            <div className="bg-gradient-to-br from-blue-900 to-slate-900 rounded-2xl p-6 flex items-center justify-center relative overflow-hidden" style={{ minHeight: '350px' }}>
               <img
                 src="/images/ksc/image_4.jpeg"
                 alt="Government Vision"
-                className="absolute inset-0 w-full h-full object-cover opacity-50"
+                className="w-full h-full object-contain p-4"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent" />
-              <div className="relative z-10 text-center text-white">
-                <Building2 className="w-16 h-16 mx-auto mb-4" />
-                <p className="text-xl font-semibold">Government-Led Development</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent pointer-events-none" />
+              <div className="relative z-10 text-center text-white pointer-events-none">
+                <Building2 className="w-14 h-14 mx-auto mb-3" />
+                <p className="text-lg font-semibold">Government-Led Development</p>
               </div>
             </div>
           </div>

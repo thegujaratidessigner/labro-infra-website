@@ -44,16 +44,17 @@ export default function WhatIsMumbai30() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="bg-gradient-to-br from-slate-100 to-blue-50 rounded-2xl p-8 aspect-square flex items-center justify-center relative overflow-hidden">
+            <div className="bg-gradient-to-br from-slate-100 to-blue-50 rounded-2xl p-6 flex items-center justify-center relative overflow-hidden" style={{ minHeight: '450px' }}>
               <img
                 src="/images/ksc/image_3.jpeg"
                 alt="KSC Map"
-                className="absolute inset-0 w-full h-full object-cover opacity-40"
+                className="w-full h-full object-contain p-4"
               />
-              <div className="relative z-10 text-center space-y-4">
-                <MapPin className="w-24 h-24 text-blue-400 mx-auto" />
-                <p className="text-gray-600 font-medium">KSC Map</p>
-                <p className="text-sm text-gray-500">Strategic Location View</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent pointer-events-none" />
+              <div className="relative z-10 text-center space-y-3 pointer-events-none absolute bottom-6 left-0 right-0">
+                <MapPin className="w-16 h-16 text-blue-400 mx-auto" />
+                <p className="text-gray-900 font-semibold">KSC Map</p>
+                <p className="text-sm text-gray-600">Strategic Location View</p>
               </div>
             </div>
           </div>

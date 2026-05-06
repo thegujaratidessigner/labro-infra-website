@@ -171,16 +171,17 @@ export default function ContactPage() {
                 {/* Map Placeholder */}
                 <div className="bg-white rounded-2xl p-8 shadow-xl">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Location</h2>
-                  <div className="aspect-video bg-gradient-to-br from-slate-100 to-blue-50 rounded-xl flex items-center justify-center relative overflow-hidden">
+                  <div className="bg-gradient-to-br from-slate-100 to-blue-50 rounded-xl flex items-center justify-center relative overflow-hidden" style={{ minHeight: '300px' }}>
                     <img
                       src="/images/ksc/image_21.jpeg"
                       alt="Office Location"
-                      className="absolute inset-0 w-full h-full object-cover opacity-50"
+                      className="w-full h-full object-contain p-4"
                     />
-                    <div className="relative z-10 text-center">
-                      <MapPin className="w-16 h-16 text-blue-400 mx-auto mb-4" />
-                      <p className="text-gray-600 font-medium">Google Map</p>
-                      <p className="text-sm text-gray-500">CBD Belapur, Navi Mumbai</p>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent pointer-events-none" />
+                    <div className="relative z-10 text-center pointer-events-none">
+                      <MapPin className="w-14 h-14 text-blue-400 mx-auto mb-3" />
+                      <p className="text-gray-900 font-semibold">Google Map</p>
+                      <p className="text-sm text-gray-600">CBD Belapur, Navi Mumbai</p>
                     </div>
                   </div>
                 </div>
