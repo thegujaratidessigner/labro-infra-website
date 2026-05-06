@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, DollarSign } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -11,6 +11,7 @@ export default function ContactPage() {
     name: '',
     phone: '',
     email: '',
+    budget: '',
     message: '',
   });
 
@@ -18,7 +19,7 @@ export default function ContactPage() {
     e.preventDefault();
     console.log('Form submitted:', formData);
     alert('Thank you for your message! We will contact you soon.');
-    setFormData({ name: '', phone: '', email: '', message: '' });
+    setFormData({ name: '', phone: '', email: '', budget: '', message: '' });
   };
 
   return (
@@ -29,18 +30,18 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-                Contact Us
+                Get in Touch with Labro Infra
               </h1>
               <div className="w-24 h-1 bg-amber-500 mx-auto mb-6" />
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Have questions or want to explore investment opportunities in Mumbai 3.0 / KSC? Our team is here to guide you.
+                Have questions or want to explore investment opportunities in Mumbai 3.0 (KSC)? Our team is here to guide you with the right information and on-ground support.
               </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Contact Form */}
               <div className="bg-white rounded-2xl p-8 shadow-xl">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Form</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -88,6 +89,20 @@ export default function ContactPage() {
                   </div>
 
                   <div>
+                    <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
+                      Investment Budget
+                    </label>
+                    <input
+                      type="text"
+                      id="budget"
+                      value={formData.budget}
+                      onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                      placeholder="Enter your investment budget"
+                    />
+                  </div>
+
+                  <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                       Message
                     </label>
@@ -103,10 +118,10 @@ export default function ContactPage() {
 
                   <button
                     type="submit"
-                    className="w-full bg-blue-900 hover:bg-blue-800 text-white font-semibold py-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                    className="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-4 rounded-lg transition-colors flex items-center justify-center gap-2"
                   >
                     <Send className="w-5 h-5" />
-                    Send Message
+                    Get Project Details
                   </button>
                 </form>
               </div>
@@ -123,8 +138,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="font-semibold text-gray-900 mb-1">Call / WhatsApp</p>
-                        <p className="text-gray-600">+91 7506674848</p>
-                        <p className="text-gray-600">+91 98672 30303</p>
+                        <p className="text-gray-600">7506674848</p>
                       </div>
                     </div>
 
@@ -145,8 +159,8 @@ export default function ContactPage() {
                       <div>
                         <p className="font-semibold text-gray-900 mb-1">Office Address</p>
                         <p className="text-gray-600">
-                          1105, Shelton Cubix, Plot No. 87,<br />
-                          Sector 15, CBD Belapur,<br />
+                          1105, Shelton Cubix, Plot No- 87,<br />
+                          Sector- 15, CBD Belapur,<br />
                           Navi Mumbai, 400614
                         </p>
                       </div>
@@ -159,7 +173,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Location</h2>
                   <div className="aspect-video bg-gradient-to-br from-slate-100 to-blue-50 rounded-xl flex items-center justify-center relative overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&q=80"
+                      src="/images/ksc/image_21.jpeg"
                       alt="Office Location"
                       className="absolute inset-0 w-full h-full object-cover opacity-50"
                     />

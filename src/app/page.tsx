@@ -2,8 +2,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import WhatIsMumbai30 from '@/components/WhatIsMumbai30';
-import WhyInvestKSC from '@/components/WhyInvestKSC';
-import Projects from '@/components/Projects';
+import GovernmentVision from '@/components/GovernmentVision';
+import MMRDA from '@/components/MMRDA';
+import GlobalInvestors from '@/components/GlobalInvestors';
+import NewsReports from '@/components/NewsReports';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { ArrowRight } from 'lucide-react';
@@ -16,8 +18,10 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <WhatIsMumbai30 />
-        <WhyInvestKSC />
-        <Projects />
+        <GovernmentVision />
+        <MMRDA />
+        <GlobalInvestors />
+        <NewsReports />
         <TestimonialCarousel />
 
         {/* Contact CTA Section */}
