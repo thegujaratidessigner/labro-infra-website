@@ -40,9 +40,9 @@ export default function NewsReports() {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 border border-blue-100 hover:border-blue-300"
+              className="group bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 border border-blue-100 hover:border-blue-300 flex flex-col h-full"
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 flex-1">
                 <div className="bg-blue-900 rounded-lg p-3 flex-shrink-0">
                   <Newspaper className="w-6 h-6 text-white" />
                 </div>
@@ -50,11 +50,11 @@ export default function NewsReports() {
                   <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-900 transition-colors">
                     {item.title}
                   </h3>
-                  <div className="flex items-center text-blue-600 text-sm">
-                    <span>Read Article</span>
-                    <ExternalLink className="w-4 h-4 ml-2" />
-                  </div>
                 </div>
+              </div>
+              <div className="flex items-center text-blue-600 text-sm mt-auto">
+                <span>Read Article</span>
+                <ExternalLink className="w-4 h-4 ml-2" />
               </div>
             </a>
           ))}

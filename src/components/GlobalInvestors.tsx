@@ -11,60 +11,55 @@ export default function GlobalInvestors() {
           <div className="w-24 h-1 bg-amber-500 mx-auto" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-16">
           <div className="space-y-6">
-            <p className="text-lg text-blue-100 leading-relaxed">
+            <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
               Mumbai 3.0 (KSC) has attracted strong interest from leading global and domestic investors, highlighting the region's long-term growth potential. With strategic investments across infrastructure, data centers, and urban development, these commitments reflect growing confidence in the future of this planned expansion.
             </p>
 
-            <p className="text-lg text-blue-100 leading-relaxed">
+            <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
               Backed by government vision and large-scale infrastructure, KSC is emerging as a key destination for institutional investment.
             </p>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white-20">
-              <p className="text-xl font-semibold text-amber-400">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 sm:p-6 border border-white-20">
+              <p className="text-base sm:text-xl font-semibold text-amber-400">
                 Strong institutional backing driving future growth
               </p>
             </div>
           </div>
 
           <div className="relative">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex items-center justify-center relative overflow-hidden" style={{ minHeight: '350px' }}>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-3 sm:p-4 border border-white/20 shadow-lg overflow-hidden">
               <img
-                src="/images/ksc/image_6.jpeg"
-                alt="Global Investors"
-                className="w-full h-full object-contain p-4"
+                src="/images/ksc/global-investors.png"
+                alt="Global Investors Backing Mumbai 3.0 KSC"
+                className="w-full h-auto object-contain rounded-xl bg-white"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent pointer-events-none" />
-              <div className="relative z-10 text-center pointer-events-none">
-                <Globe className="w-14 h-14 mx-auto mb-3 text-amber-400" />
-                <p className="text-lg font-semibold">Global Investment Hub</p>
-              </div>
             </div>
           </div>
         </div>
 
         {/* Stats Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white-20 text-center">
-            <DollarSign className="w-12 h-12 text-amber-400 mx-auto mb-4" />
-            <p className="text-3xl sm:text-4xl font-bold text-white mb-2">₹15 Lakh Cr</p>
-            <p className="text-sm text-blue-200">Estimated Investment</p>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white-20 text-center flex flex-col h-full">
+            <DollarSign className="w-10 h-10 sm:w-12 sm:h-12 text-amber-400 mx-auto mb-3 sm:mb-4" />
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">₹15 Lakh Cr</p>
+            <p className="text-xs sm:text-sm text-blue-200">Estimated Investment</p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white-20 text-center">
-            <TrendingUp className="w-12 h-12 text-amber-400 mx-auto mb-4" />
-            <p className="text-3xl sm:text-4xl font-bold text-white mb-2">$100B</p>
-            <p className="text-sm text-blue-200">Infrastructure Pipeline</p>
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white-20 text-center flex flex-col h-full">
+            <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-amber-400 mx-auto mb-3 sm:mb-4" />
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">$100B</p>
+            <p className="text-xs sm:text-sm text-blue-200">Infrastructure Pipeline</p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white-20 text-center">
-            <Building2 className="w-12 h-12 text-amber-400 mx-auto mb-4" />
-            <p className="text-xl font-bold text-white mb-2">Edu-City</p>
-            <p className="text-sm text-blue-200">Education Hub</p>
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white-20 text-center flex flex-col h-full">
+            <Building2 className="w-10 h-10 sm:w-12 sm:h-12 text-amber-400 mx-auto mb-3 sm:mb-4" />
+            <p className="text-lg sm:text-xl font-bold text-white mb-2">Edu-City</p>
+            <p className="text-xs sm:text-sm text-blue-200">Education Hub</p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white-20 text-center">
-            <Globe className="w-12 h-12 text-amber-400 mx-auto mb-4" />
-            <p className="text-xl font-bold text-white mb-2">Atal Setu</p>
-            <p className="text-sm text-blue-200">Influence Area</p>
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white-20 text-center flex flex-col h-full">
+            <Globe className="w-10 h-10 sm:w-12 sm:h-12 text-amber-400 mx-auto mb-3 sm:mb-4" />
+            <p className="text-lg sm:text-xl font-bold text-white mb-2">Atal Setu</p>
+            <p className="text-xs sm:text-sm text-blue-200">Influence Area</p>
           </div>
         </div>
       </div>
