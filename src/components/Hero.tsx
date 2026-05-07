@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { CheckCircle, MapPin, Plane, Anchor, Building2, TrendingUp, Shield, Zap, Road } from 'lucide-react';
+import { CheckCircle, Building2, TrendingUp, Shield, Zap, Road, Anchor } from 'lucide-react';
 import LeadFormPopup from './LeadFormPopup';
 
 export default function Hero() {
@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div className="max-w-2xl">
             {/* Left Content */}
             <div className="text-white space-y-6 sm:space-y-8">
               {/* Top Badge */}
@@ -81,52 +81,6 @@ export default function Hero() {
                 >
                   <span className="text-cyan-400">+91 75066 74848</span>
                 </a>
-              </div>
-            </div>
-
-            {/* Right Content - Floating Location Labels on Background Image */}
-            <div className="relative hidden lg:block">
-              <div className="relative h-[500px] lg:h-[600px]">
-                {/* Floating Location Labels */}
-                <div className="absolute top-[15%] right-[20%] animate-float" style={{ animationDelay: '0s' }}>
-                  <div className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl border border-cyan-200">
-                    <div className="flex items-center gap-2">
-                      <Plane className="w-4 h-4 text-blue-600" />
-                      <span className="text-xs font-semibold text-gray-900">Navi Mumbai International Airport</span>
-                    </div>
-                  </div>
-                  <div className="w-2 h-2 bg-cyan-500 rounded-full mx-auto mt-1 animate-pulse" />
-                </div>
-
-                <div className="absolute top-[35%] right-[10%] animate-float" style={{ animationDelay: '0.5s' }}>
-                  <div className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl border border-cyan-200">
-                    <div className="flex items-center gap-2">
-                      <Road className="w-4 h-4 text-blue-600" />
-                      <span className="text-xs font-semibold text-gray-900">Atal Setu</span>
-                    </div>
-                  </div>
-                  <div className="w-2 h-2 bg-cyan-500 rounded-full mx-auto mt-1 animate-pulse" />
-                </div>
-
-                <div className="absolute top-[55%] right-[25%] animate-float" style={{ animationDelay: '1s' }}>
-                  <div className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl border border-cyan-200">
-                    <div className="flex items-center gap-2">
-                      <Anchor className="w-4 h-4 text-blue-600" />
-                      <span className="text-xs font-semibold text-gray-900">JNPA Port</span>
-                    </div>
-                  </div>
-                  <div className="w-2 h-2 bg-cyan-500 rounded-full mx-auto mt-1 animate-pulse" />
-                </div>
-
-                <div className="absolute bottom-[30%] left-[20%] animate-float" style={{ animationDelay: '1.5s' }}>
-                  <div className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl border border-cyan-200">
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-blue-600" />
-                      <span className="text-xs font-semibold text-gray-900">KSC Region</span>
-                    </div>
-                  </div>
-                  <div className="w-2 h-2 bg-cyan-500 rounded-full mx-auto mt-1 animate-pulse" />
-                </div>
               </div>
             </div>
           </div>
