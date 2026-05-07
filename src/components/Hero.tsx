@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { CheckCircle, Map, Building2, TrendingUp, Road } from 'lucide-react';
+import { CheckCircle, MapPin, Plane, Anchor, Building2, TrendingUp, Shield, Zap, Road } from 'lucide-react';
 import LeadFormPopup from './LeadFormPopup';
 
 export default function Hero() {
@@ -15,86 +15,142 @@ export default function Hero() {
 
   return (
     <>
-      <section id="home" className="pt-20 min-h-screen relative">
-        {/* Background Image with Overlay */}
+      <section id="home" className="pt-20 min-h-screen relative overflow-hidden">
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
             src="/images/ksc/hero-bg.jpeg"
             alt="KSC Infrastructure"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-800/85 to-slate-900/90" />
+          {/* Left side dark blue gradient overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-blue-900/70 to-transparent lg:bg-gradient-to-r lg:from-blue-900/90 lg:via-blue-900/50 lg:to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Content */}
             <div className="text-white space-y-6 sm:space-y-8">
-              <div className="inline-block px-4 py-2 bg-amber-500/20 rounded-full">
-                <span className="text-amber-400 font-semibold text-sm">Mumbai 3.0 Opportunity</span>
+              {/* Top Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+                <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                <span className="text-cyan-300 font-semibold text-xs sm:text-sm tracking-wide">MUMBAI 3.0 OPPORTUNITY</span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-                INVEST IN KSC REGION THE NEXT GROWTH HUB OF MUMBAI 3.0
+              {/* Large Headline with proper line breaks */}
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight">
+                <span className="block">INVEST IN</span>
+                <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">KSC REGION</span>
+                <span className="block">THE NEXT GROWTH HUB OF</span>
+                <span className="block">MUMBAI 3.0</span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-blue-100 leading-relaxed">
+              {/* Subtext */}
+              <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed max-w-2xl">
                 Be a part of the region that is set to transform with world class infrastructure, seamless connectivity & unlimited potential.
               </p>
 
-              {/* Trust Badges */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4">
-                  <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 flex-shrink-0" />
-                  <span className="text-xs sm:text-sm font-medium">Government Planned Region</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4">
-                  <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 flex-shrink-0" />
-                  <span className="text-xs sm:text-sm font-medium">World-Class Infrastructure</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4">
-                  <Road className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 flex-shrink-0" />
-                  <span className="text-xs sm:text-sm font-medium">Seamless Connectivity</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4">
-                  <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 flex-shrink-0" />
-                  <span className="text-xs sm:text-sm font-medium">High Growth Potential</span>
-                </div>
+              {/* Feature Icon Strip - Glassmorphism Style */}
+              <div className="space-y-3">
+                {[
+                  { icon: Building2, text: 'Government Planned Region' },
+                  { icon: Road, text: 'Atal Setu Connectivity' },
+                  { icon: Anchor, text: 'JNPA Port Connectivity' },
+                  { icon: TrendingUp, text: 'High Growth Potential & Strong ROI' },
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center gap-4 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10 hover:bg-white/10 transition-colors">
+                    <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-5 h-5 text-white" />
+                    </div>
+                    <span className="text-sm sm:text-base font-medium text-white/90">{item.text}</span>
+                  </div>
+                ))}
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <button
-                  onClick={() => openPopup('details')}
-                  className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors text-center text-sm sm:text-base"
-                >
-                  Get Project Details
-                </button>
+              {/* CTA Button with Phone */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <button
                   onClick={() => openPopup('visit')}
-                  className="bg-white hover:bg-gray-100 text-blue-900 font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors text-center text-sm sm:text-base"
+                  className="group relative bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 text-center text-sm sm:text-base"
                 >
-                  Book Site Visit
+                  BOOK A SITE VISIT
                 </button>
+                <a
+                  href="tel:+917506674848"
+                  className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-semibold px-6 py-4 rounded-lg border border-white/20 transition-all duration-300 text-center text-sm sm:text-base"
+                >
+                  <span className="text-cyan-400">+91 75066 74848</span>
+                </a>
               </div>
             </div>
 
-            {/* Right Content - Map Placeholder */}
+            {/* Right Content - Floating Location Labels on Background Image */}
             <div className="relative hidden lg:block">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="bg-gradient-to-br from-blue-950 to-slate-900 rounded-xl flex items-center justify-center relative overflow-hidden" style={{ minHeight: '400px' }}>
-                  <img
-                    src="/images/ksc/hero-icons.jpeg"
-                    alt="KSC Region Highlights"
-                    className="w-full h-full object-contain p-4 opacity-60"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent pointer-events-none" />
-                  <div className="relative z-10 text-center space-y-3 pointer-events-none">
-                    <Map className="w-20 h-20 text-blue-400/60 mx-auto" />
-                    <p className="text-white text-sm font-semibold">KSC Region Map</p>
-                    <p className="text-blue-200 text-xs">Karnala–Sai–Chirner New Town</p>
+              <div className="relative h-[500px] lg:h-[600px]">
+                {/* Floating Location Labels */}
+                <div className="absolute top-[15%] right-[20%] animate-float" style={{ animationDelay: '0s' }}>
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl border border-cyan-200">
+                    <div className="flex items-center gap-2">
+                      <Plane className="w-4 h-4 text-blue-600" />
+                      <span className="text-xs font-semibold text-gray-900">Navi Mumbai International Airport</span>
+                    </div>
                   </div>
+                  <div className="w-2 h-2 bg-cyan-500 rounded-full mx-auto mt-1 animate-pulse" />
                 </div>
+
+                <div className="absolute top-[35%] right-[10%] animate-float" style={{ animationDelay: '0.5s' }}>
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl border border-cyan-200">
+                    <div className="flex items-center gap-2">
+                      <Road className="w-4 h-4 text-blue-600" />
+                      <span className="text-xs font-semibold text-gray-900">Atal Setu</span>
+                    </div>
+                  </div>
+                  <div className="w-2 h-2 bg-cyan-500 rounded-full mx-auto mt-1 animate-pulse" />
+                </div>
+
+                <div className="absolute top-[55%] right-[25%] animate-float" style={{ animationDelay: '1s' }}>
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl border border-cyan-200">
+                    <div className="flex items-center gap-2">
+                      <Anchor className="w-4 h-4 text-blue-600" />
+                      <span className="text-xs font-semibold text-gray-900">JNPA Port</span>
+                    </div>
+                  </div>
+                  <div className="w-2 h-2 bg-cyan-500 rounded-full mx-auto mt-1 animate-pulse" />
+                </div>
+
+                <div className="absolute bottom-[30%] left-[20%] animate-float" style={{ animationDelay: '1.5s' }}>
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl border border-cyan-200">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-blue-600" />
+                      <span className="text-xs font-semibold text-gray-900">KSC Region</span>
+                    </div>
+                  </div>
+                  <div className="w-2 h-2 bg-cyan-500 rounded-full mx-auto mt-1 animate-pulse" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Floating Info Bar */}
+          <div className="mt-8 lg:mt-12">
+            <div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl p-4 sm:p-6 border border-white/20">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                {[
+                  { icon: Shield, title: 'Government Backed', desc: 'MMRDA Approved' },
+                  { icon: Building2, title: 'World-Class Infrastructure', desc: 'Mega Projects' },
+                  { icon: TrendingUp, title: 'High ROI Potential', desc: 'Early Stage Entry' },
+                  { icon: Zap, title: 'Future Ready Region', desc: 'Smart City Vision' },
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900 text-xs sm:text-sm">{item.title}</p>
+                      <p className="text-xs text-gray-600">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
