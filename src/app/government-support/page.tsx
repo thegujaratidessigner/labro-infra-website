@@ -74,7 +74,7 @@ export default function GovernmentSupportPage() {
         <section className="py-16 sm:py-20 bg-gradient-to-br from-slate-50 to-blue-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 sm:mb-16">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4">
+              <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 break-words">
                 Government Support
               </h1>
               <div className="w-24 h-1 bg-amber-500 mx-auto mb-6" />
@@ -87,7 +87,7 @@ export default function GovernmentSupportPage() {
               <img
                 src="/images/ksc/govt-support.jpeg"
                 alt="Government Support Framework for Mumbai 3.0"
-                className="w-full h-auto object-contain rounded-2xl shadow-lg max-h-80 sm:max-h-96 mx-auto"
+                className="w-full h-auto object-cover rounded-2xl shadow-lg mx-auto"
               />
             </div>
 

@@ -21,7 +21,7 @@ export default function Hero() {
           <img
             src="/images/ksc/hero-bg.jpeg"
             alt="KSC Infrastructure"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center min-w-full min-h-full"
           />
           {/* Left side dark blue gradient overlay for readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-blue-900/70 to-transparent lg:bg-gradient-to-r lg:from-blue-900/90 lg:via-blue-900/50 lg:to-transparent" />
@@ -51,18 +51,18 @@ export default function Hero() {
               </p>
 
               {/* Feature Icon Strip - Glassmorphism Style */}
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {[
                   { icon: Building2, text: 'Government Planned Region' },
                   { icon: Road, text: 'Atal Setu Connectivity' },
                   { icon: Anchor, text: 'JNPA Port Connectivity' },
                   { icon: TrendingUp, text: 'High Growth Potential & Strong ROI' },
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center gap-4 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10 hover:bg-white/10 transition-colors">
-                    <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-5 h-5 text-white" />
+                  <div key={index} className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/10 hover:bg-white/10 transition-colors">
+                    <div className="w-8 h-8 rounded-md bg-white/10 flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-4 h-4 text-white" />
                     </div>
-                    <span className="text-sm sm:text-base font-medium text-white/90">{item.text}</span>
+                    <span className="text-xs sm:text-sm font-medium text-white/90">{item.text}</span>
                   </div>
                 ))}
               </div>
