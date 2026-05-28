@@ -142,7 +142,7 @@ export default function WhyInvestPage() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
-        <section className="py-16 sm:py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+        <section className="pt-24 sm:pt-28 pb-16 sm:pb-20 bg-gradient-to-br from-slate-50 to-blue-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 sm:mb-16">
               <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 break-words">
@@ -167,7 +167,7 @@ export default function WhyInvestPage() {
                 <img
                   src="/images/ksc/connectivity.jpeg"
                   alt="Connectivity Infrastructure"
-                  className="w-full h-auto object-cover rounded-2xl shadow-lg"
+                  className="w-full h-auto object-cover object-center rounded-2xl shadow-lg"
                 />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -222,7 +222,7 @@ export default function WhyInvestPage() {
                 <img
                   src="/images/ksc/future-vision-hero.jpeg"
                   alt="KSC Future City Vision"
-                  className="w-full h-auto object-cover rounded-2xl shadow-lg"
+                  className="w-full h-auto object-cover object-center rounded-2xl shadow-lg"
                 />
               </div>
               <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
