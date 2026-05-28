@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Labro Infra - Mumbai 3.0 / KSC Land Investment Opportunities",
   description: "Invest early in Mumbai 3.0 - KSC (Karnala-Sai-Chirner) New Town before prices rise. Government-planned growth corridor with infrastructure-driven development. Premium land investment opportunities.",
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: "Labro Infra - Mumbai 3.0 / KSC Land Investment Opportunities",
     description: "Invest early in Mumbai 3.0 - KSC (Karnala-Sai-Chirner) New Town before prices rise. Government-planned growth corridor with infrastructure-driven development.",

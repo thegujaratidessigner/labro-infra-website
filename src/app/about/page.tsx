@@ -33,7 +33,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 sm:mb-16">
               <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 break-words hyphens-auto">
-                "We don't just sell land — we help you invest in the future."
+                We don't just sell land we help you invest in the future.
               </h1>
               <div className="w-24 h-1 bg-amber-500 mx-auto mb-6" />
             </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Email</p>
-                    <p className="text-gray-600 text-sm sm:text-base">Info@labroinfra@gmail.com</p>
+                    <p className="text-gray-600 text-sm sm:text-base">info@labroinfra.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 sm:gap-4">

@@ -158,7 +158,7 @@ export default function WhyInvestPage() {
             <div className="mb-16 sm:mb-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 sm:mb-8 flex items-center gap-3">
                 <Road className="w-8 h-8 sm:w-10 sm:h-10" />
-                1. CONNECTIVITY
+                CONNECTIVITY
               </h2>
               <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed">
                 The KSC (Mumbai 3.0) region offers excellent connectivity, making it a strategically important location for future growth. It is well-connected to key infrastructure such as the Navi Mumbai International Airport, Atal Setu (Mumbai Trans Harbour Link), JNPA Port, and major highways linking Mumbai and Pune. This seamless connectivity not only improves accessibility but also plays a crucial role in driving real estate demand, industrial growth, and long-term value appreciation in the region.
@@ -185,7 +185,7 @@ export default function WhyInvestPage() {
             <div className="mb-16 sm:mb-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 sm:mb-8 flex items-center gap-3">
                 <Building2 className="w-8 h-8 sm:w-10 sm:h-10" />
-                2. MEGA INFRASTRUCTURE DEVELOPMENT
+                MEGA INFRASTRUCTURE DEVELOPMENT
               </h2>
               <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 {infrastructureItems.map((item, index) => (
@@ -213,7 +213,7 @@ export default function WhyInvestPage() {
             <div className="mb-16 sm:mb-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 sm:mb-8 flex items-center gap-3">
                 <Sparkles className="w-8 h-8 sm:w-10 sm:h-10" />
-                3. FUTURE CITY VISION
+                FUTURE CITY VISION
               </h2>
               <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 text-center leading-relaxed">
                 A fully planned, self-sustained city combining living, working, education, healthcare, and business in one integrated ecosystem.
@@ -251,7 +251,7 @@ export default function WhyInvestPage() {
             <div className="mb-16 sm:mb-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 sm:mb-8 flex items-center gap-3">
                 <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10" />
-                4. Early Entry Opportunity
+                Early Entry Opportunity
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 sm:p-8 text-center border-2 border-green-200">
@@ -271,7 +271,7 @@ export default function WhyInvestPage() {
             <div className="mb-16 sm:mb-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 sm:mb-8 flex items-center gap-3">
                 <FileText className="w-8 h-8 sm:w-10 sm:h-10" />
-                5. How do we help Invest?
+                How do we help Invest?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {howWeHelpItems.map((item, index) => (
